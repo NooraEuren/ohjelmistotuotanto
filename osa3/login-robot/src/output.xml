@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5.1 (Python 3.14.10 on win32)" generated="2026-11-16T14:24:07.484003" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\noora\TEKA3003\ohjelmistotuotanto\osa3\login-robot\src\tests">
+<suite id="s1-s1" name="Login" source="C:\Users\noora\TEKA3003\ohjelmistotuotanto\osa3\login-robot\src\tests\login.robot">
+<test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
+<kw name="Create User And Input Login Command" type="SETUP">
+<kw name="Create User" owner="AppLibrary">
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" start="2026-11-16T14:24:07.788139" elapsed="0.000527"/>
+</kw>
+<kw name="Input Login Command" owner="resource">
+<kw name="Input" owner="AppLibrary">
+<arg>login</arg>
+<status status="PASS" start="2026-11-16T14:24:07.790209" elapsed="0.000177"/>
+</kw>
+<status status="PASS" start="2026-11-16T14:24:07.789714" elapsed="0.000788"/>
+</kw>
+<status status="PASS" start="2026-11-16T14:24:07.786794" elapsed="0.003785"/>
+</kw>
+<kw name="Input Credentials" owner="resource">
+<kw name="Input" owner="AppLibrary">
+<arg>${username}</arg>
+<status status="PASS" start="2026-11-16T14:24:07.791213" elapsed="0.000176"/>
+</kw>
+<kw name="Input" owner="AppLibrary">
+<arg>${password}</arg>
+<status status="PASS" start="2026-11-16T14:24:07.791516" elapsed="0.000202"/>
+</kw>
+<kw name="Run Application" owner="AppLibrary">
+<status status="PASS" start="2026-11-16T14:24:07.791847" elapsed="0.000127"/>
+</kw>
+<arg>kalle</arg>
+<arg>kalle123</arg>
+<status status="PASS" start="2026-11-16T14:24:07.790830" elapsed="0.001211"/>
+</kw>
+<kw name="Output Should Contain" owner="AppLibrary">
+<arg>Logged in</arg>
+<status status="PASS" start="2026-11-16T14:24:07.792163" elapsed="0.000119"/>
+</kw>
+<status status="PASS" start="2026-11-16T14:24:07.785263" elapsed="0.007178"/>
+</test>
+<status status="PASS" start="2026-11-16T14:24:07.739103" elapsed="0.054015"/>
+</suite>
+<status status="PASS" start="2026-11-16T14:24:07.488101" elapsed="0.305747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Login" id="s1-s1" pass="1" fail="0" skip="0">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
